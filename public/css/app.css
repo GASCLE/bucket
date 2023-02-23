@@ -1,6 +1,13 @@
 body{
     font-family: 'Roboto', sans-serif;
     background-color: chartreuse;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main{
+    flex: 1;
 }
 
 a{
@@ -10,4 +17,19 @@ a{
 
 img{
     width: 100px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+nav a:hover{
+    color: cornflowerblue;
+    box-shadow: 10px 5px 5px cornflowerblue;;
+}
+
+li{
+    margin: 2px;
 }
