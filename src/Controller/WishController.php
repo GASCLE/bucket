@@ -25,8 +25,8 @@ class WishController extends AbstractController
 //            ->setDescription("1234564987dfs");
 //        $wishRepository->save($wish, true);
         //TODO récupérer la liste des wish et la renvoyer
-        $wishes = $wishRepository->findBy(["isPublished" => true], ["dateCreated" => 'DESC']);
-
+        //$wishes = $wishRepository->findBy(["isPublished" => true], ["dateCreated" => 'DESC']);
+        $wishes = $wishRepository->findPublishWishes();
         dump($wishes);
 
         return $this->render('/wish/list.html.twig', [
